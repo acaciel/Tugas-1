@@ -1,0 +1,12 @@
+# Contoh penggunaan kelas dan metode pada OOP
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def bark(self):
+        print(f"{self.name} is barking!")
+
+dog1 = Dog("Buddy", 2)
+print(dog1.name) # Output: Buddy
+dog1.bark()
