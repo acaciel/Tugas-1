@@ -1,12 +1,20 @@
-# Contoh penggunaan kelas dan metode pada OOP
-class Dog:
+# Contoh functional programming
+def calculate_square(numbers):
+    return list(map(lambda x: x**2, numbers))
+
+numb = [1, 2, 3, 4, 5]
+squares_list = calculate_square(numb)
+print(squares_list)
+
+# Contoh OOP
+class Cat:
     def __init__(self, name, age):
         self.name = name
         self.age = age
     
-    def bark(self):
-        print(f"{self.name} is barking!")
+    def miaw(self):
+        print(f"{self.name} mengeong!")
 
-dog1 = Dog("Buddy", 2)
-print(dog1.name) # Output: Buddy
-dog1.bark()
+cat1 = Cat("Tako", 2)
+print(cat1.name)
+cat1.miaw()
